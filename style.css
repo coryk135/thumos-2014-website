@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "My Custom Font";
+    src: url(bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff) format("truetype");
+}
+
 body {
 	padding-top: 70px;
 	padding-bottom: 30px;
@@ -33,13 +38,62 @@ body {
 
 .secondary-color {
 }
+
 a {
 	color: black;
 }
 
-
-.navbar {
+div.navbar.primary-background-color {
 	box-shadow: 0 2px 5px rgba(0,0,0,.26);
+	background-color: #009688;
+	color: white;
+}
+.navbar * {
+	transition: background-color 0.1s linear;
+}
+.navbar-header a:hover{
+	color: white;
+	background-color: #00796b;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	/*color: rgba(0,0,0,0.87);*/
+	color: white;
+	background-color: #00796b;
+}
+.nav > li > a > span,
+.nav > li > a > span {
+	transition: background-color 0.1s linear;
+}
+.nav > li > a:hover > span.carrot,
+.nav > li > a:hover > span.carrot {
+	/*color: rgba(0,0,0,0.87);*/
+	color: white;
+	background-color: #00796b;
+}
+.navbar-toggle .icon-bar {
+	background-color: white;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+	background-color: #00796b;
+	border-color: #00796b;
+	/*color: rgba(0, 0, 0, .87);*/
+	color: white;
+}
+
+.dropdown-menu {
+	background-color: #009688;
+	color: white;
+}
+.dropdown-menu > li > a {
+	color: white;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	color: white;
+	text-decoration: none;
+	background-color: #00796b;
 }
 
 .jumbotron.masthead {
@@ -60,8 +114,32 @@ a {
 }
 
 .btn-primary {
-	background-color: #009688;
-	border-color: #009688;
+	background-color: #00796b;
+	border-color: #00796b;
+	transition: background-color 0.1s linear, border-color 0.1s linear;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+	background-color: #ffab40;
+	border-color: #ffab40;
+	color: rgba(0,0,0,0.87);
+}
+
+
+.panel {
+
+}
+.panel-primary > .panel-heading {
+	background-color: #00796b;
+	border-color: #00796b;
+}
+.panel-primary {
+	border-color: #00796b;
+}
+.panel-title {
+	font-size: 20px;
 }
 
 .color-palette .light {
@@ -76,6 +154,24 @@ a {
 .color-palette .dark-when-small {
 	color: rgba(0, 0, 0, 0.87);
 }
+
+
+
+.custom-list {
+	margin-left: 25px;
+}
+ul.custom-list {
+	list-style-type: none;
+}
+ol.custom-list {
+	list-style-type: upper-roman;
+}
+
+.panel-body .custom-list {
+	margin-left: 0px;
+}
+
+
 
 
 
